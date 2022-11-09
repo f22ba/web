@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第1ステージ</title>
-    <h1>STAGE 1</h1>
+    <title>第3ステージ</title>
+    <h1>STAGE 3</h1>
     <center><h2>リンク探しゲーム</h2></center>
     <style>
         body{
@@ -13,12 +13,12 @@
             background-color: rgb(1, 1, 202);
         }
         h1{
-            width:100px;
+            width: 100px;
             font-size: x-large;
             border-left: 8px solid;
             padding-left: 10px;
             color: #ffffff;
-            margin:0 auto;
+            margin: 0 auto;
         }
         h2{
             font-size: large;
@@ -48,36 +48,49 @@
         .tooltip:after {
             content: attr(data-tooltip);
             background: rgb(18, 88, 167);
+            height: 20px;
             font-size: 15px;
             padding: 10px;
             border-radius: 50px;
         }
-        .tooltip:hover:after {
-            opacity: .9;
+        .tooltip:hover::after {
+            opacity: 1;
         }
         p{
             color: #ffffff;
         }
+        .hand{
+            cursor:help
+        }
+        .link{
+            color:rgb(1, 1, 202);
+            cursor:default
+        }
     </style>
 </head>
 <body>
-    <hr>
+    <span class="hand"><hr onclick="document.location = 'stage1.html'"></span>
     <center>
         <br>
-        <br>
-        <p>HTML.CSSの授業で作成した、リンク探しゲームです。<br>
-            ページ内に隠れたリンクを探して、ぜひゲームをクリアしてみて下さい。<br>
-            覚えることが多くて大変ですが、学んだことを少しずつでも活かせるようになれたら<a href="stage2pupumi.html">いい</a>なぁ。<br>
-            まずは、簡単なリンク探しの問題です。<br>
-            一問目は、この文章中に隠れてます。<br>
+        <p>STAGE 2 クリアですね。<br>
+            ここが最終ステージになります。<br><br>
+            今度はマウスオーバーをしてもカーソルが反応しませんよ。<br>
+            <br>
+            このページの文字がリンクになっています。<br>
+            隠れたリンクは見つかるでしょうか？<br><br>
+            ドット『.』とか、句読点『。、』とか小さな文字ではないですよ。<br>
+            <br><br>
+            今回も【Tab】キーを押してもみつかりません。<br>
+            クリックしてもリンク先には飛べませんよ。<br>
             左下にヒントがあるので、見つからなかったら活用してくださいね。</p>
             <br>
             <br>
+            <p class="link" ondblclick="location='stage1.html'" >LINK>></p>
     </center>
 </body>
 <footer>
     <p>ひんと
-    <span class="tooltip" data-tooltip="文字にマウスを重ねると… !? 　もしくは【Tab】キーを押してみましょう!"><input type="button" value=" ? "></span>
+    <span class="tooltip" data-tooltip="Ctrl(⌘)+Aでリンクの場所がみつかります。 クリックではなく、○○○クリック!!"><input type="button" value=" ? "></span>
     </p>
 </footer>
 </html>
