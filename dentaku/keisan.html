@@ -39,6 +39,7 @@
                     }
                     else {
                         alert("0では割れません")
+                        result = "error"
                         break;
                     }                    
                 case "*":
@@ -46,6 +47,7 @@
                     break;
                 default :
                     alert("演算子は + , - , * , / を入力してください")
+                    result = "error"
             }
 
             // 結果の表示
