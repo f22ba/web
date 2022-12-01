@@ -33,8 +33,15 @@
                     result = num1 - num2;
                     break;
                 case "/":
-                    result = num1 / num2;
-                    break;
+                    if (num2 != 0){
+                        result = num1 / num2;
+                        break;
+                    }
+                    else {
+                        alert("0では割れません")
+                        break;
+                    }
+                    
                 case "*":
                     result = num1 * num2;
                     break;
