@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!--レスポンシブ用-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=0">
+    <!--css読込-->
+    <link rel="stylesheet" href="css/miniReset.css">
+    <link rel="stylesheet" href="css/top_style.css">
+    <!--js読込-->
+    <script src="js/main.js"></script>
+    <title>自己紹介ページ</title>
+</head>
+<script>
+    
+</script>
+
+<body>
+    <!--全体を囲う箱divをつくる ここでは包むのでwrapperというidにしてる-->
+    <div id="wrapper">
+        <header>
+            <div id="head_logo">
+                <img src="img/logo.png" alt="ヘッダーロゴ" width="130" height="60">
+                <div class="status">
+                    <div id="world"><p>WORLD</p></div>
+                    <div id="coin"><p>COIN ×</p></div>
+                    <textarea readonly id="world_text">1-1</textarea>
+                    <textarea readonly id="coin_text">0</textarea>
+                </div>
+            </div>
+        </header>
+        <!--top-->
+        <section id="top_view" onpointerover="worldMove1()">
+            <div class="main_width" >
+                <p id="welcame">Welcame to my Homepage!</p>
+                <div class="kumo">
+                    <img id="kumo" src="img/kumo1.png" width="160" height="116" >
+                    <img id="kumo2" src="img/kumo2.png" width="265" height="116" >
+                    <img id="kumo1" src="img/kumo1.png" width="160" height="116" >
+                </div>
+                <div class="section_title">
+                    <h2>KAZUYUKI SEKINO;</h2>
+                </div>
+                <p>Profile:<br><br>
+                    <span>CID</span> 中央情報大学校<br><br>
+                    Department of Information Systems,<br>
+                    Program Major.<br><br>
+                        
+                    I am learning using<br>
+                    the Professional practical education<br>
+                    and training benefits system.<br>
+                </p>
+                <div id="top_view_items">
+                    <img id="coin_img1" class="coin_img" src="img/coin.png" width="88" height="88" 
+                    onclick="countCoin() ; hiddenCoin(this.id)" >
+                    <img id="coin_img2" class="coin_img" src="img/coin.png" width="88" height="88" 
+                    onclick="countCoin() ; hiddenCoin(this.id)" >
+                    <img id="coin_img3" class="coin_img" src="img/coin.png" width="88" height="88" 
+                    onclick="countCoin() ; hiddenCoin(this.id)" >
+                </div>
+                <!--test用
+                <img src="img/coin.png" onpointerover="worldMove()" >
+                <img id="coinImg1" src="img/coin.png" width="88" height="88" onclick="countCoin() ; hiddenCoin(this.id)" >
+                <img id="coinImg2" src="img/coin.png" width="88" height="88" onclick="countCoin() ; hiddenCoin(this.id)" >
+                <img id="coinImg10" src="img/coin10.png" width="88" height="88" onclick="countCoin10() ; hiddenCoin(this.id)" >
+                -->
+            </div>
+        </section>
+        <section id="live_in_Gunma" onpointerover="worldMove2()">
+            <div class="green"></div>
+            <div class="renga"></div>
+            <div class="main_width" >
+                <div class="section_title">
+                    <h2>Live in GUNMA;</h2>
+                </div>
+                <p><br>Takasaki City.(Gunma Prefecture)<br>
+                    since 2018.<br>
+                    <br>
+                    # SAITAMA -> TOKYO -> CHIBA -><br>
+                    TOKYO -> SAITAMA -><br>
+                    ->> GUNMA !! <br>
+                    <br>
+                    <br>
+                    群馬県にきて感じた違和感は、<br>
+                    <br>
+                    群馬では、赤城山は"あかぎやま"読みが主流! <br>
+                    "あかぎさん"というと群馬ネイティヴになれない。<br>
+                    <br>
+                    数字を1から順番にかぞえるときに<br>
+                    11から不思議なリズムにノッて数えるときがある。<br>
+                    <br>
+                    中毛？上毛？西毛？両毛？東毛？北毛？<br>
+                    毛野？下毛？<br>
+                    これは本当にイメージがつかない。。<br>
+                </p>
+                <img id="coin_img4" class="coin_img" src="img/coin10.png" width="88" height="88" 
+                onclick="countCoin10() ; hiddenCoin(this.id)" >
+
+            </div><!--main_width-->
+            <div class="renga"></div>
+            <div class="wave"></div>
+        </section><!--live_in_Gunma-->
+            
+
+        <section id="skills" onpointerover="worldMove3()">
+            <div class="main_width">
+                <div class="section_title">
+                    <h2>Skills;<br>
+                        Graphic and Programming Language;</h2>
+                </div>
+                <div class="levels">
+                    <div></div>
+                    <div class="odd_bg">BGINNER</div>
+                    <div class="even_bg">ELEMENTARY</div>
+                    <div class="odd_bg">INTERMEDIATE</div>
+                    <div class="even_bg">ADVANCED</div>
+                    <div class="odd_bg">EXPERT</div>
+                </div> 
+                <div class="level_bars level_bars_first">
+                    <div><p>PHOTOGRAPH</p></div>
+                    <div class="ph bc"></div>
+                </div>
+                <div class="level_bars">
+                    <div><p>PHOTOSHOP</p></div>
+                    <div class="ps bc"></div>
+                </div>
+                <div class="level_bars">
+                    <div><p>ILLUSTRATOR</p></div>
+                    <div class="ai bc"></div>
+                </div>
+                <div class="level_bars">
+                    <div><p>PREMIRE PRO</p></div>
+                    <div class="pr bc"></div>
+                </div>
+                <div class="level_bars">
+                    <div><p>AFTER EFFECT</p></div>
+                    <div class="ae bc"></div>
+                </div>
+                <div class="level_bars">
+                    <div><p>JAVA/PYTHON</p></div>
+                    <div class="jp bc"></div>
+                </div>
+                <div class="level_bars level_bars_last">
+                    <div class="hcj_text" ><p>HTML/CSS/JAVASCRIPT</p></div>
+                    <div class="hcj bc"></div>
+                </div>
+            </div><!--main_width-->
+        </section><!--skills-->
+        <div class="block"></div>
+    </div>
+</body>
+</html>
