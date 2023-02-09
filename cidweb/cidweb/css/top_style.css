@@ -1,0 +1,395 @@
+@charset "UTF-8";
+/* ----------------------------------
+    font
+----------------------------------- */
+@font-face {
+    font-family: "dotFont";
+    src:url("../font/PixelMplus12-Regular.woff2") format("woff2")
+    }
+    * {
+    font-family: "dotFont";
+    }
+/* ----------------------------------
+----------------------------------- */
+#wrapper {
+    overflow: hidden;
+    background-image: url("../img/block.png");
+    margin-bottom: 0;
+    background-size: 40px;
+    
+}
+.main_width {
+    /*max-widthで最大*/
+    max-width: 1300px;
+    /*左右自動で余白*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+/* ----------------------------------
+    header
+----------------------------------- */
+header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9997;
+    background: #fff;
+}
+header #head_logo {
+    padding: 0 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.status {
+    color: #00bff3;
+    font-size: 26px;
+    letter-spacing: 0.1em;
+    z-index: 9998;
+}
+#world {
+    position: fixed;
+    top: 8px;
+    right: 300px;
+}
+#coin {
+    position: fixed;
+    top: 20px;
+    right: 150px;
+
+} 
+#world_text {
+    position: fixed;
+    width: 62px;
+    top: 40px;
+    right: 300px;
+
+}
+#coin_text {
+    position: fixed;
+    width: 54px;
+    top: 20px;
+    right: 80px;
+}
+
+/* ----------------------------------
+    セクションタイトル共通
+----------------------------------- */
+.section_title h2 {
+    padding-top: 2.5em;
+    font-size: 54px;
+    letter-spacing: 0.1em;
+}
+
+/* ----------------------------------
+    top_view
+----------------------------------- */
+#welcame_text {
+    position: relative;
+    width: 100%;
+    margin-top: 72px;
+    left: -170px;
+    transform: translateX(50%);
+    font-size: 24px;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+}
+
+#top_view {
+    position: relative;
+    margin-top: 80px;
+    background: #00bff3;
+  }
+#top_view .main_width {
+    position: relative;
+    color: #fff;
+    background: #00bff3;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+#top_view .main_width #welcame {
+    text-align: center;
+}
+#top_view .main_width .kumo #kumo {
+    position:absolute;
+    margin-top: 0;
+    left: -50px;
+}
+#top_view .main_width .kumo #kumo2 {
+    position: absolute;
+    margin-top: 210px;
+    right: -20px;
+}
+#top_view .main_width .kumo #kumo1 {
+    position: absolute;
+    margin-top: 542px;
+    right: 250px;
+}
+#top_view .main_width p {
+    margin-top: 3em;
+    font-size: 24px;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+}
+#top_view .main_width p span{
+    color: #c9191a;
+}
+#top_view_items {
+    padding-top: 60px;
+}
+
+/* ----------------------------------
+    live in Gunma
+----------------------------------- */
+#live_in_Gunma {
+    background: #000;
+}
+
+.green {
+    width:100%;
+    height: 50px;
+    background-color: #9b5102;
+    background-image: url("../img/green.png");
+    position: relative;
+}
+#dokan1 {
+    position: absolute;
+    top: -77px;
+    right: 50px;
+}
+
+.renga {
+    position: relative;
+    width:100%;
+    height: 300px;
+    background-image: url("../img/block_88_88.png");
+}
+#coin_img4 {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+#coin_img5 {
+    position: absolute;
+    top: -800px;
+    left: 0px;
+}
+/* #coin_img6 {
+    position: absolute;
+    top: -150px;
+    left: 90px;
+} */
+#coin_img7 {
+    position: absolute;
+    top: -100px;
+    left: 270px;
+}
+#coin_img8 {
+    position: absolute;
+    top: -880px;
+    right: 0px;
+}
+#coin_img9 {
+    position: absolute;
+    top: -740px;
+    right: 80px;
+}
+#coin_img10 {
+    position: absolute;
+    top: -360px;
+    right: 0px;
+}
+#live_in_Gunma .main_width h2 {
+    text-align: center;
+}
+#live_in_Gunma .main_width p {
+    margin-top: 3em;
+    font-size: 24px;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-bottom: 140px;
+}
+
+.wave {
+    position: relative;
+    top: -4px;
+    width:100%;
+    height: 6px;
+    background-image: url("../img/sea-wave.png");
+    margin-bottom: 0;
+}
+
+
+
+/* ----------------------------------
+    Skills
+----------------------------------- */
+#skill_coins {
+    position: relative;
+    
+}
+#coin_img11 {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+#coin_img12 {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+#coin_img13 {
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+#skills {
+    margin-top: -5px;
+    background: #0072bc;
+    height: 870px;
+}
+#skills .main_width h2 {
+    font-size: 44px;
+    margin-bottom: 100px;
+    
+}
+
+.levels {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    height: 40px;
+}
+.levels div:nth-child(1) {
+    width: 30%;
+    background: none;
+}
+.levels div {
+    width: calc(70% / 5);
+    /* background: #FFDBDB; */
+    font-size: 18px;
+}
+.levels .odd_bg {
+    background: #047cc2;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    letter-spacing: 0.08em;
+}
+.levels .even_bg {
+    background: #09728f;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    letter-spacing: 0.08em;
+}
+
+.level_bars {
+    width: 100%;
+    display: flex;
+    height: 40px;
+}
+/*項目*/
+.level_bars div:nth-child(1) {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 5px;
+}
+.level_bars div:nth-child(1) p {
+    background: #f26d7d;
+}
+
+/*メーター*/
+
+.level_bars .ph {
+    width: calc(70% /5 *5);
+    background: #ec008c;
+    height: 15.5px;
+    margin: 13px 0;
+}
+.level_bars .ps {
+    width: calc(70% /5 *5);
+    background: #ec008c;
+    height: 15.5px;
+    margin: 13px 0;
+}
+.level_bars .ai {
+    width: calc(70% /5 *3);
+    background: #ec008c;
+    height: 15.5px;
+    margin: 13px 0;
+}
+.level_bars .pr {
+    width: calc(70% /5 *3);
+    background: #ec008c;
+    height: 15.5px;
+    margin: 13px 0;
+}
+.level_bars .ae {
+    width: calc(70% /5 *2);
+    background: #ec008c;
+    height: 15.5px;
+    margin: 13px 0;
+}
+.level_bars .jp {
+    width: calc(70% /5 *1);
+    background: #ec008c;
+    height: 15.5px;
+    margin: 13px 0;
+}
+.level_bars .hcj {
+    width: calc(70% /5 *1);
+    background: #ec008c;
+    height: 15.5px;
+    margin: 13px 0;
+}
+/* .level_bars.level_bars_first {
+    border-top: 2px solid #c9191a;
+} */
+/* .level_bars.level_bars_last {
+    border-bottom: 2px solid #c9191a;
+} */
+
+#dokan3 {
+    position: absolute;
+    top: -77px;
+    right: 50px;
+}
+#coin_img14 {
+    position: absolute;
+    top: -136px;
+    right: 110px;
+}
+#coin_img15 {
+    position: absolute;
+    top: -136px;
+    right: 194px;
+}
+
+
+.block {
+    position: relative;
+    top: -4px;
+    width:100%;
+    height: 240px;
+    background-image: url("../img/block.png");
+    margin-bottom: 0;
+    background-size: 40px;
+}
+.block p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #000;
+    font-size: 14px;
+}
